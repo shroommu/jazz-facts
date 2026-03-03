@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ababab;
+    justify-content: center;
+    padding: 24px;
+}
+
+.website-title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav {
+    margin: 12px 0 0 0;
+}
+
+.nav-item-list {
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 0;
+    justify-content: center;
+    margin: 0;
+}
+
+.nav-item-list li {
+    margin-right: 16px;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: blueviolet;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item-list li:hover {
+    background-color: blue;
+}
+
+.nav-item-list :last-child {
+    margin-right: 0;
+}
