@@ -32,10 +32,6 @@ header img {
     justify-content: center;
 }
 
-.nav-item-list li:hover {
-    font-size: large;
-}
-
 .nav-item-list :last-child {
     margin-right: 0;
 }

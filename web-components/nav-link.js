@@ -1,9 +1,8 @@
-// web component
-class NavButton extends HTMLElement {
+class NavLink extends HTMLElement {
 
     constructor() {
         super();
-        this.text = 'Button';
+        this.text = 'Link';
     }
 
     // component attributes
@@ -21,10 +20,22 @@ class NavButton extends HTMLElement {
 
     // connect component
     connectedCallback() {
-        this.innerHTML = `<button>${this.text}</button>`;
+        this.innerHTML = `
+        <a>
+            ${this.text}
+        </a>
+        <style>
+            a {
+                line-height: 0;
+            }            
+            a:hover {
+                font-size: large;
+                line-height: 0;
+            }
+      </style>`;
     }
 
 }
 
 // register component
-customElements.define('nav-button', NavButton);
+customElements.define('nav-link', NavLink);
