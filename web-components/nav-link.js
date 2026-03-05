@@ -1,24 +1,24 @@
 class NavLink extends HTMLElement {
-  constructor() {
-    super();
-    this.text = "Nav Link";
-    this.splotchcolor = "black";
-  }
+    constructor() {
+        super();
+        this.text = "Nav Link";
+        this.splotchcolor = "black";
+    }
 
-  // component attributes
-  static get observedAttributes() {
-    return ["text", "splotchcolor"];
-  }
+    // component attributes
+    static get observedAttributes() {
+        return ["text", "splotchcolor"];
+    }
 
-  // attribute change
-  attributeChangedCallback(property, oldValue, newValue) {
-    if (oldValue === newValue) return;
-    this[property] = newValue;
-  }
+    // attribute change
+    attributeChangedCallback(property, oldValue, newValue) {
+        if (oldValue === newValue) return;
+        this[property] = newValue;
+    }
 
-  // connect component
-  connectedCallback() {
-    this.innerHTML = `
+    // connect component
+    connectedCallback() {
+        this.innerHTML = `
             <div class="nav-link-container">
                 <a class="nav-link">${this.text}</a>
                 <div class="paint-splotch-${this.text}" />
@@ -47,12 +47,13 @@ class NavLink extends HTMLElement {
                     top: -35px;
                     left: -15px;
                     z-index: 0;
-                    mask: url('./public/paint-splotch.png');
+                    mask: url('./public/paint-splotch.png'), radial-gradient(circle at center, transparent 0%, black 100%); 
                     mask-size: contain;
+                    mask-composite: subtract;
                 }
             </style>
         `;
-  }
+    }
 }
 
 // register component
