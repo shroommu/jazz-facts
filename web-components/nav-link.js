@@ -21,21 +21,21 @@ class NavLink extends HTMLElement {
         this.innerHTML = `
             <div class="nav-link-container">
                 <a class="nav-link">${this.text}</a>
-                <div class="paint-splotch-${this.text}" />
+                <div class="paint-splotch-${this.text}"></div>
             </div>
             <style>
                 .nav-link-container {
                     position: relative;
+                    height: 100px;
+                    display: flex;
+                    justify-items: center;
+                    align-items: center;
                 }
                 .nav-link-container:hover .paint-splotch-${this.text} {
                     display: block;
                 }
-                .nav-link-container:hover .nav-link {
-                    font-size: large;
-                    line-height: 0;
-                }
                 .nav-link {
-                    line-height: 0;
+                    font-size: large;
                     z-index: 10;
                 }
                 .paint-splotch-${this.text} {
@@ -44,8 +44,9 @@ class NavLink extends HTMLElement {
                     background-color: ${this.splotchcolor};
                     height: 100px;
                     width: 100px;
-                    top: -35px;
-                    left: -15px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                     z-index: 0;
                     mask: url('./public/paint-splotch.png'), radial-gradient(circle at center, transparent 0%, black 100%); 
                     mask-size: contain;
