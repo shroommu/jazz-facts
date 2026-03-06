@@ -1,7 +1,36 @@
+@font-face {
+    font-family: "Over The Rainbow";
+    src: url(./public/fonts/OvertheRainbow-Regular.ttf), format("font/ttf");
+}
+
+@font-face {
+    font-family: "Notable";
+    src: url(./public/fonts/Notable-Regular.ttf), format("font/ttf");
+}
+
+@font-face {
+    font-family: "Limelight";
+    src: url(./public/fonts/Limelight-Regular.ttf), format("font/ttf");
+}
+
 body {
     margin: 0;
     height: 100vh;
     width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    background: url('./public/brown-wooden-floor-1920px.avif') no-repeat;
+    background-size: cover;
+}
+
+.paper-background {
+    margin-top: 96px;
+    background: url('./public/paper-texture.avif') repeat-y;
+    box-shadow: 0 0 24px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    width: 50%;
+    min-width: 800px;
 }
 
 header {

@@ -7,7 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="preload" as="image" href="./public/paint-splotch-100px.png" />
-    <link rel="preload" as="image" href="./public/Jazz Headliner.png" />
+    <link rel="preload" as="image" href="./public/Jazz Headliner.avif" />
+    <link rel="preload" as="image" href="./public/paper-texture.avif" />
+    <link rel="preload" as="image" href="./public/brown-wooden-floor-1920px.avif" />
+    <link rel="preload" as="font" href="./public/fonts/OvertheRainbow-Regular.ttf" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="./public/fonts/Notable-Regular.ttf" crossorigin="anonymous" />
+    <link rel="preload" as="font" href="./public/fonts/Limelight-Regular.ttf" crossorigin="anonymous" />
+
     <title>Jazz Facts</title>
 
     <script src="./web-components/hello-world.js" defer></script>
@@ -15,21 +21,23 @@
 </head>
 
 <body>
-    <header>
-        <img src="./public/Jazz Headliner.png" loading="eager" fetchpriority="high" height="400" width="400" />
-        <nav>
-            <ul class="nav-item-list">
-                <li><nav-link text="Overview" splotchcolor="#f54295"></nav-link></li>
-                <li><nav-link text="History" splotchcolor="#f55d42"></nav-link></li>
-                <li><nav-link text="Genres" splotchcolor="#f59b42"></nav-link></li>
-                <li><nav-link text="Playlist" splotchcolor="#f5d742"></nav-link></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <hello-world name="Alex"></hello-world>
-    </main>
-    <footer></footer>
+    <div class="paper-background">
+        <header>
+            <img src="./public/Jazz Headliner.avif" loading="eager" fetchpriority="high" height="600" width="600" />
+            <nav>
+                <ul class="nav-item-list">
+                    <li><nav-link text="Overview" splotchcolor="#f54295"></nav-link></li>
+                    <li><nav-link text="History" splotchcolor="#f55d42"></nav-link></li>
+                    <li><nav-link text="Genres" splotchcolor="#f59b42"></nav-link></li>
+                    <li><nav-link text="Playlist" splotchcolor="#f5d742"></nav-link></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <hello-world name="Alex"></hello-world>
+        </main>
+        <footer></footer>
+    </div>
 </body>
 
 </html>

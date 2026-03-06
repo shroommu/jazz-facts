@@ -35,7 +35,8 @@ class NavLink extends HTMLElement {
                     opacity: 1;
                 }
                 .nav-link {
-                    font-size: large;
+                    font-family: "Limelight";
+                    font-size: x-large;
                     z-index: 10;
                 }
                 .paint-splotch-${this.text} {
