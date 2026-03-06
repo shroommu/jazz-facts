@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="preload" as="image" href="./public/paint-splotch-100px.png" />
+    <link rel="preload" as="image" href="./public/Jazz Headliner.png" />
     <title>Jazz Facts</title>
+
+    <script src="./web-components/hello-world.js" defer></script>
+    <script src="./web-components/nav-link.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="./public/Jazz Headliner.png" height="400px" width="400px" />
+        <img src="./public/Jazz Headliner.png" loading="eager" fetchpriority="high" height="400" width="400" />
         <nav>
             <ul class="nav-item-list">
                 <li><nav-link text="Overview" splotchcolor="#f54295"></nav-link></li>
@@ -25,9 +30,6 @@
         <hello-world name="Alex"></hello-world>
     </main>
     <footer></footer>
-
-    <script src="./web-components/hello-world.js"></script>
-    <script src="./web-components/nav-link.js"></script>
 </body>
 
 </html>

@@ -32,14 +32,14 @@ class NavLink extends HTMLElement {
                     align-items: center;
                 }
                 .nav-link-container:hover .paint-splotch-${this.text} {
-                    display: block;
+                    opacity: 1;
                 }
                 .nav-link {
                     font-size: large;
                     z-index: 10;
                 }
                 .paint-splotch-${this.text} {
-                    display: none;
+                    opacity: 0;
                     position: absolute;
                     background-color: ${this.splotchcolor};
                     height: 100px;
@@ -48,7 +48,7 @@ class NavLink extends HTMLElement {
                     left: 50%;
                     transform: translate(-50%, -50%);
                     z-index: 0;
-                    mask: url('./public/paint-splotch.png'), radial-gradient(circle at center, transparent 0%, black 100%); 
+                    mask: url('./public/paint-splotch-100px.png'), radial-gradient(circle at center, transparent 0%, black 100%); 
                     mask-size: contain;
                     mask-composite: subtract;
                 }
