@@ -24,6 +24,12 @@ body {
     background-size: cover;
 }
 
+@media (max-width: 800px) {
+    body {
+        background: none;
+    }
+}
+
 .paper-background {
     margin: 96px 0;
     padding-bottom: 36px;
@@ -35,6 +41,16 @@ body {
     height: calc(100% - 128px);
 }
 
+@media (max-width: 800px) {
+    .paper-background {
+        margin: 0;
+        background: none;
+        box-shadow: none;
+        width: 100%;
+        min-width: auto;
+    }
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -42,9 +58,24 @@ header {
     padding: 24px;
 }
 
-header img {
+@media (max-width: 800px) {
+    .header {
+        padding: 8px;
+    }
+}
+
+.hero-image {
     display: block;
     margin: 0 auto;
+    height: 600px;
+    width: 600px;
+}
+
+@media (max-width: 800px) {
+    .hero-image {
+        width: 250px;
+        height: 250px;
+    }
 }
 
 .nav-item-list {
@@ -59,6 +90,12 @@ header img {
     margin-right: 48px;
     display: flex;
     justify-content: center;
+}
+
+@media (max-width: 800px) {
+    .nav-item-list li {
+        margin-right: 12px;
+    }
 }
 
 .nav-item-list :last-child {

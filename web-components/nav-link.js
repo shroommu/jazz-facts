@@ -40,6 +40,11 @@ class NavLink extends HTMLElement {
                     font-size: x-large;
                     z-index: 10;
                 }
+                @media (max-width: 800px) {
+                    .nav-link {
+                        font-size: medium;
+                    }
+                }
                 .paint-splotch-${this.text} {
                     opacity: 0;
                     position: absolute;
@@ -53,6 +58,12 @@ class NavLink extends HTMLElement {
                     mask: url('./public/paint-splotch-100px.png'), radial-gradient(circle at center, transparent 0%, black 100%); 
                     mask-size: contain;
                     mask-composite: subtract;
+                }
+                @media (max-width: 800px) {
+                    .paint-splotch-${this.text} {
+                        height: 50px;
+                        width: 50px;
+                    }
                 }
             </style>
         `;
