@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="preload" as="image" href="./public/paint-splotch-100px.png" />
-    <link rel="preload" as="image" href="./public/Jazz Headliner.avif" />
-    <link rel="preload" as="image" href="./public/paper-texture.avif" />
-    <link rel="preload" as="image" href="./public/brown-wooden-floor-1920px.avif" />
-    <link rel="preload" as="font" href="./public/fonts/Limelight-Regular.ttf" crossorigin="anonymous" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <link rel="preload" as="image"
+            href="./public/images/avif/jazz-headliner.avif" />
+        <link rel="preload" as="image"
+            href="./public/images/avif/brown-wooden-floor-1920px.avif" />
+        <link rel="preload" as="image"
+            href="./public//images/avif/paper-texture.avif" />
+        <link rel="preload" as="image"
+            href="./public/images/avif/paint-splotch-100px.avif" />
+        <link rel="preload" as="font"
+            href="./public/fonts/Limelight-Regular.ttf"
+            crossorigin="anonymous" />
 
-    <title>Jazz Facts</title>
+        <title>Jazz Facts</title>
 
-    <script src="./web-components/hello-world.js" defer></script>
-    <script src="./web-components/nav-link.js" defer></script>
-</head>
+        <script src="./web-components/hello-world.js" defer></script>
+        <script src="./web-components/nav-link.js" defer></script>
+    </head>
 
-<body>
-    <div class="paper-background">
-        <header>
-            <img class="hero-image" src="./public/Jazz Headliner.avif" loading="eager" fetchpriority="high" />
-            <nav>
-                <ul class="nav-item-list">
-                    <li><nav-link text="Overview" splotchcolor="#f54295"></nav-link></li>
-                    <li><nav-link text="History" splotchcolor="#f55d42"></nav-link></li>
-                    <li><nav-link text="Genres" splotchcolor="#f59b42"></nav-link></li>
-                    <li><nav-link text="Playlist" splotchcolor="#f5d742"></nav-link></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <hello-world name="Alex"></hello-world>
-        </main>
-    </div>
-    <footer></footer>
-</body>
+    <body>
+        <div class="paper-background">
+            <header>
+                <img class="hero-image"
+                    src="./public/images/avif/jazz-headliner.avif"
+                    loading="eager" fetchpriority="high" />
+                <nav>
+                    <ul class="nav-item-list">
+                        <li><nav-link text="Overview"
+                                splotchcolor="#f54295"></nav-link></li>
+                        <li><nav-link text="History"
+                                splotchcolor="#f55d42"></nav-link></li>
+                        <li><nav-link text="Genres"
+                                splotchcolor="#f59b42"></nav-link></li>
+                        <li><nav-link text="Playlist"
+                                splotchcolor="#f5d742"></nav-link></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <hello-world></hello-world>
+            </main>
+        </div>
+        <footer></footer>
+    </body>
 
 </html>

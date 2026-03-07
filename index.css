@@ -1,117 +1,118 @@
 @font-face {
-    font-family: "Over The Rainbow";
-    src: url(./public/fonts/OvertheRainbow-Regular.ttf), format("font/ttf");
+  font-family: "Over The Rainbow";
+  src: url(./public/fonts/OvertheRainbow-Regular.ttf), format("font/ttf");
 }
 
 @font-face {
-    font-family: "Notable";
-    src: url(./public/fonts/Notable-Regular.ttf), format("font/ttf");
+  font-family: "Notable";
+  src: url(./public/fonts/Notable-Regular.ttf), format("font/ttf");
 }
 
 @font-face {
-    font-family: "Limelight";
-    src: url(./public/fonts/Limelight-Regular.ttf), format("font/ttf");
+  font-family: "Limelight";
+  src: url(./public/fonts/Limelight-Regular.ttf), format("font/ttf");
 }
 
 body {
-    margin: 0;
-    width: 100vw;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url('./public/brown-wooden-floor-1920px.avif') no-repeat;
-    background-size: cover;
+  margin: 0;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("./public/images/avif/brown-wooden-floor-1920px.avif")
+    no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 800px) {
-    body {
-        background: none;
-    }
+  body {
+    background: none;
+  }
 }
 
 .paper-background {
-    margin: 96px 0;
-    padding-bottom: 36px;
-    background: url('./public/paper-texture.avif') repeat-y;
-    box-shadow: 0 0 24px 12px rgba(0, 0, 0, 0.5);
-    border-radius: 2px;
-    width: 50%;
-    min-width: 800px;
-    height: calc(100% - 128px);
+  margin: 96px 0;
+  padding-bottom: 36px;
+  background: url("./public/images/avif/paper-texture.avif") repeat-y;
+  box-shadow: 0 0 24px 12px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  width: 50%;
+  min-width: 800px;
+  height: calc(100% - 128px);
 }
 
 @media (max-width: 800px) {
-    .paper-background {
-        margin: 0;
-        background: none;
-        box-shadow: none;
-        width: 100%;
-        min-width: auto;
-    }
+  .paper-background {
+    margin: 0;
+    background: none;
+    box-shadow: none;
+    width: 100%;
+    min-width: auto;
+  }
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
 }
 
 @media (max-width: 800px) {
-    .header {
-        padding: 8px;
-    }
+  .header {
+    padding: 8px;
+  }
 }
 
 .hero-image {
-    display: block;
-    margin: 0 auto;
-    height: 600px;
-    width: 600px;
+  display: block;
+  margin: 0 auto;
+  height: 600px;
+  width: 600px;
 }
 
 @media (max-width: 800px) {
-    .hero-image {
-        width: 250px;
-        height: 250px;
-    }
+  .hero-image {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 .nav-item-list {
-    display: flex;
-    flex-direction: row;
-    padding-inline-start: 0;
-    justify-content: center;
-    margin: 0;
+  display: flex;
+  flex-direction: row;
+  padding-inline-start: 0;
+  justify-content: center;
+  margin: 0;
 }
 
 .nav-item-list li {
-    margin-right: 48px;
-    display: flex;
-    justify-content: center;
+  margin-right: 48px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 800px) {
-    .nav-item-list li {
-        margin-right: 12px;
-    }
+  .nav-item-list li {
+    margin-right: 12px;
+  }
 }
 
 .nav-item-list :last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 main {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 main div {
-    justify-content: center;
+  justify-content: center;
 }
 
 footer {
-    width: 100%;
-    min-height: 128px;
+  width: 100%;
+  min-height: 128px;
 }

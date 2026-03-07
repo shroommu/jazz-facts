@@ -1,25 +1,25 @@
 class NavLink extends HTMLElement {
-    constructor() {
-        super();
-        this.text = "Nav Link";
-        this.splotchcolor = "black";
-        this.shadow = this.attachShadow({ mode: 'open' });
-    }
+  constructor() {
+    super();
+    this.text = "Nav Link";
+    this.splotchcolor = "black";
+    this.shadow = this.attachShadow({ mode: "open" });
+  }
 
-    // component attributes
-    static get observedAttributes() {
-        return ["text", "splotchcolor"];
-    }
+  // component attributes
+  static get observedAttributes() {
+    return ["text", "splotchcolor"];
+  }
 
-    // attribute change
-    attributeChangedCallback(property, oldValue, newValue) {
-        if (oldValue === newValue) return;
-        this[property] = newValue;
-    }
+  // attribute change
+  attributeChangedCallback(property, oldValue, newValue) {
+    if (oldValue === newValue) return;
+    this[property] = newValue;
+  }
 
-    // connect component
-    connectedCallback() {
-        this.shadow.innerHTML = `
+  // connect component
+  connectedCallback() {
+    this.shadow.innerHTML = `
             <div class="nav-link-container">
                 <a class="nav-link">${this.text}</a>
                 <div class="paint-splotch-${this.text}"></div>
@@ -55,7 +55,7 @@ class NavLink extends HTMLElement {
                     left: 50%;
                     transform: translate(-50%, -50%);
                     z-index: 0;
-                    mask: url('./public/paint-splotch-100px.png'), radial-gradient(circle at center, transparent 0%, black 100%); 
+                    mask: url('./public/images/avif/paint-splotch-100px.avif'), radial-gradient(circle at center, transparent 0%, black 100%); 
                     mask-size: contain;
                     mask-composite: subtract;
                 }
@@ -67,7 +67,7 @@ class NavLink extends HTMLElement {
                 }
             </style>
         `;
-    }
+  }
 }
 
 // register component
