@@ -15,22 +15,24 @@
 
 body {
     margin: 0;
-    height: 100vh;
     width: 100vw;
     background-color: black;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background: url('./public/brown-wooden-floor-1920px.avif') no-repeat;
     background-size: cover;
 }
 
 .paper-background {
-    margin-top: 96px;
+    margin: 96px 0;
+    padding-bottom: 36px;
     background: url('./public/paper-texture.avif') repeat-y;
     box-shadow: 0 0 24px 12px rgba(0, 0, 0, 0.5);
     border-radius: 2px;
     width: 50%;
     min-width: 800px;
+    height: calc(100% - 128px);
 }
 
 header {
@@ -70,4 +72,9 @@ main {
 
 main div {
     justify-content: center;
+}
+
+footer {
+    width: 100%;
+    min-height: 128px;
 }

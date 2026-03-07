@@ -3,6 +3,7 @@ class NavLink extends HTMLElement {
         super();
         this.text = "Nav Link";
         this.splotchcolor = "black";
+        this.shadow = this.attachShadow({ mode: 'open' });
     }
 
     // component attributes
@@ -18,7 +19,7 @@ class NavLink extends HTMLElement {
 
     // connect component
     connectedCallback() {
-        this.innerHTML = `
+        this.shadow.innerHTML = `
             <div class="nav-link-container">
                 <a class="nav-link">${this.text}</a>
                 <div class="paint-splotch-${this.text}"></div>
