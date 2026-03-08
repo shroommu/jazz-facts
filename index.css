@@ -73,9 +73,11 @@ body {
 .paper-background {
   margin: 96px 0;
   padding-bottom: 36px;
-  background: url("./public/images/avif/paper-texture.avif") repeat-y;
+  background-color: rgb(223, 112, 112);
+  border-top: 4px rgb(239, 145, 145) solid;
+  border-bottom: 4px rgb(188, 91, 91) solid;
   box-shadow: 0 0 24px 12px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
+  border-radius: 4px;
   width: 50%;
   min-width: 800px;
   height: calc(100% - 128px);
