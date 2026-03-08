@@ -31,6 +31,45 @@ body {
   }
 }
 
+.record-player-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-60%, -40%) rotate(-65deg);
+}
+
+.record-player-base-container {
+  position: relative;
+  filter: drop-shadow(-24px 48px 24px rgba(0, 0, 0, 0.5));
+}
+
+.record-player-base {
+  mask: url("./public/images/avif/record-player-base.avif");
+}
+
+.tone-arm-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50px, 275px) rotate(-55deg) scale(1.5);
+  filter: drop-shadow(-24px 24px 12px rgb(0, 0, 0, 0.75));
+}
+
+.tone-arm {
+  mask: url("./public/images/avif/record-player-arm.avif");
+}
+
+.record-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-58%, -55%) scale(1.55);
+}
+
+.record {
+  mask: url("./public/images/avif/record.avif");
+}
+
 .paper-background {
   margin: 96px 0;
   padding-bottom: 36px;
