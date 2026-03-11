@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class="record-player-container">
+    <!-- <div class="record-player-container">
         <div class="record-player-base-container">
             <img class="record-player-base" src="./public/images/avif/record-player-base.avif" />
             <div class="record-container">
@@ -32,24 +32,23 @@
                 <img class="tone-arm" src="./public/images/avif/record-player-arm.avif" />
             </div>
         </div>
+    </div> -->
+    <header>
+        <nav>
+            <ul class="nav-item-list">
+                <li><nav-link text="Overview" splotchcolor="#f54295"></nav-link></li>
+                <li><nav-link text="History" splotchcolor="#f55d42"></nav-link></li>
+                <li><nav-link text="Genres" splotchcolor="#f59b42"></nav-link></li>
+                <li><nav-link text="Playlist" splotchcolor="#f5d742"></nav-link></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="album-cover">
+        <img class="hero-image" src="./public/images/avif/jazz-headliner.avif" loading="eager" fetchpriority="high" />
     </div>
-    <div class="paper-background">
-        <header>
-            <img class="hero-image" src="./public/images/avif/jazz-headliner.avif" loading="eager"
-                fetchpriority="high" />
-            <nav>
-                <ul class="nav-item-list">
-                    <li><nav-link text="Overview" splotchcolor="#f54295"></nav-link></li>
-                    <li><nav-link text="History" splotchcolor="#f55d42"></nav-link></li>
-                    <li><nav-link text="Genres" splotchcolor="#f59b42"></nav-link></li>
-                    <li><nav-link text="Playlist" splotchcolor="#f5d742"></nav-link></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <hello-world></hello-world>
-        </main>
-    </div>
+    <main>
+        <hello-world></hello-world>
+    </main>
     <footer></footer>
 </body>
 

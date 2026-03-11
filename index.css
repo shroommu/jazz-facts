@@ -20,8 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("./public/images/avif/brown-wooden-floor-1920px.avif")
-    no-repeat;
+  background: url("./public/images/avif/brown-wooden-floor-1920px.avif") no-repeat;
   background-size: cover;
 }
 
@@ -36,6 +35,12 @@ body {
   top: 0;
   left: 0;
   transform: translate(-60%, -40%) rotate(-65deg);
+}
+
+@media (max-width: 800px) {
+  .record-player-container {
+    display: none;
+  }
 }
 
 .record-player-base-container {
@@ -70,17 +75,19 @@ body {
   mask: url("./public/images/avif/record.avif");
 }
 
-.paper-background {
+.album-cover {
+  display: flex;
   margin: 96px 0;
   padding-bottom: 36px;
   background-color: rgb(223, 112, 112);
   border-top: 4px rgb(239, 145, 145) solid;
+  border-left: 4px rgb(239, 145, 145) solid;
+  border-right: 4px rgb(188, 91, 91) solid;
   border-bottom: 4px rgb(188, 91, 91) solid;
   box-shadow: 0 0 24px 12px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
-  width: 50%;
-  min-width: 800px;
-  height: calc(100% - 128px);
+  width: 600px;
+  height: 600px;
 }
 
 @media (max-width: 800px) {
@@ -88,6 +95,7 @@ body {
     margin: 0;
     background: none;
     box-shadow: none;
+    border: none;
     width: 100%;
     min-width: auto;
   }
@@ -95,8 +103,10 @@ body {
 
 header {
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
+  background-color: white;
   padding: 24px;
 }
 
@@ -108,9 +118,9 @@ header {
 
 .hero-image {
   display: block;
-  margin: 0 auto;
-  height: 600px;
-  width: 600px;
+  margin: auto;
+  height: 500px;
+  width: 500px;
 }
 
 @media (max-width: 800px) {
