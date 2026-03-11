@@ -22,12 +22,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  background: url("./public/images/avif/brown-wooden-floor-1920px.avif") no-repeat;
-  background-size: cover;
+  /* background: url("./public/images/avif/brown-wooden-floor-1920px.avif") no-repeat;
+  background-size: cover; */
+  background-color: rgb(157, 211, 255)
 }
 
 body record-album {
-  height: 100%;
+  height: 75%;
   width: 100%;
 }
 
@@ -89,6 +90,11 @@ main {
 
 main div {
   justify-content: center;
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.75);
+  width: 50%;
+  min-width: 800px;
+  border-radius: 8px;
 }
 
 footer {
