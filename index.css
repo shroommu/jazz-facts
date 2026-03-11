@@ -1,44 +1,131 @@
+@font-face {
+  font-family: "Over The Rainbow";
+  src: url(./public/fonts/OvertheRainbow-Regular.ttf), format("font/ttf");
+}
+
+@font-face {
+  font-family: "Notable";
+  src: url(./public/fonts/Notable-Regular.ttf), format("font/ttf");
+}
+
+@font-face {
+  font-family: "Limelight";
+  src: url(./public/fonts/Limelight-Regular.ttf), format("font/ttf");
+}
+
 body {
+  margin: 0;
+  width: 100%;
+  overflow-x: clip;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background: url("./public/images/avif/brown-wooden-floor-1920px.avif")
+    no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 800px) {
+  body {
+    background: none;
+  }
+}
+
+.record-player-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-60%, -40%) rotate(-65deg);
+}
+
+@media (max-width: 800px) {
+  .record-player-container {
+    display: none;
+  }
+}
+
+.record-player-base-container {
+  position: relative;
+  filter: drop-shadow(-24px 48px 24px rgba(0, 0, 0, 0.5));
+}
+
+.record-player-base {
+  mask: url("./public/images/avif/record-player-base.avif");
+}
+
+.tone-arm-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-50px, 275px) rotate(-55deg) scale(1.5);
+  filter: drop-shadow(-24px 24px 12px rgb(0, 0, 0, 0.75));
+}
+
+.tone-arm {
+  mask: url("./public/images/avif/record-player-arm.avif");
+}
+
+.record-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-58%, -55%) scale(1.55);
+}
+
+.record {
+  mask: url("./public/images/avif/record.avif");
+}
+
+.album-cover {
+  display: flex;
+  margin: 48px auto;
+  padding-bottom: 36px;
+  background-color: rgb(223, 112, 112);
+  border-top: 4px rgb(239, 145, 145) solid;
+  border-left: 4px rgb(239, 145, 145) solid;
+  border-right: 4px rgb(188, 91, 91) solid;
+  border-bottom: 4px rgb(188, 91, 91) solid;
+  box-shadow: 0 0 24px 12px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 500px;
+  height: 500px;
+}
+
+@media (max-width: 800px) {
+  .album-cover {
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    background: none;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    min-width: auto;
+  }
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 24px;
+.hero-image {
+  display: block;
+  margin: auto;
+  height: 400px;
+  width: 400px;
 }
 
-header img {
-    display: block;
-    margin: 0 auto;
-}
-
-.nav-item-list {
-    display: flex;
-    flex-direction: row;
-    padding-inline-start: 0;
-    justify-content: center;
-    margin: 0;
-}
-
-.nav-item-list li {
-    margin-right: 48px;
-    display: flex;
-    justify-content: center;
-}
-
-.nav-item-list :last-child {
-    margin-right: 0;
+@media (max-width: 800px) {
+  .hero-image {
+    width: 250px;
+    height: 250px;
+  }
 }
 
 main {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 main div {
-    justify-content: center;
+  justify-content: center;
+}
+
+footer {
+  min-height: 128px;
 }
