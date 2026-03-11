@@ -5,6 +5,12 @@
     aspect-ratio: 1/1;
 }
 
+@media (max-width: 800px) {
+    .album-cover-link {
+        display: none;
+    }
+}
+
 .album-cover {
     position: relative;
     display: flex;
