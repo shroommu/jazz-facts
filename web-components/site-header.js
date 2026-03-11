@@ -13,10 +13,10 @@ class SiteHeader extends HTMLElement {
         <header>
             <nav>
                 <ul class="nav-item-list">
-                    <li><nav-link text="Overview"></nav-link></li>
-                    <li><nav-link text="History"></nav-link></li>
-                    <li><nav-link text="Genres"></nav-link></li>
-                    <li><nav-link text="Playlist"></nav-link></li>
+                    <li><nav-link text="Overview" href="./overview/index.html"></nav-link></li>
+                    <li><nav-link text="History" href="./history/index.html"></nav-link></li>
+                    <li><nav-link text="Genres" href="./genres/index.html"></nav-link></li>
+                    <li><nav-link text="Playlist" href="./playlist/index.html"></nav-link></li>
                 </ul>
             </nav>
         </header>
