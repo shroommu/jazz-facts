@@ -21,7 +21,7 @@ class NavLink extends HTMLElement {
   connectedCallback() {
     const musicNotesSpriteUrl = new URL(
       "../public/images/svg/music-notes.svg",
-      import.meta.url
+      import.meta.url,
     ).href;
     const navLinkCssUrl = new URL("./nav-link.css", import.meta.url).href;
 

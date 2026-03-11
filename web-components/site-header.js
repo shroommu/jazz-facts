@@ -2,7 +2,7 @@ import "./nav-link.js";
 
 const musicNotesSpriteUrl = new URL(
   "../public/images/svg/music-notes.svg",
-  import.meta.url
+  import.meta.url,
 ).href;
 const siteHeaderCssUrl = new URL("./site-header.css", import.meta.url).href;
 const homePageUrl = new URL("../index.html", import.meta.url).href;
