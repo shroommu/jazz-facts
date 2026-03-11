@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="preload" as="image" href="./public/images/avif/jazz-headliner.avif" />
-    <link rel="preload" as="image" href="./public/images/avif/brown-wooden-floor-1920px.avif" />
-    <link rel="preload" as="image" href="./public/images/svg/music-notes.svg" />
-    <link rel="preload" as="image" href="./public/images/avif/paint-splotch-100px.avif" />
-    <link rel="preload" as="image" href="./public/images/avif/record-player-arm.avif" />
-    <link rel="preload" as="image" href="./public/images/avif/record-player-base.avif" />
-    <link rel="preload" as="image" href="./public/images/avif/record.avif" />
-    <link rel="preload" as="font" href="./public/fonts/Limelight-Regular.ttf" crossorigin="anonymous" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./index.css" />
+        <link rel="preload" as="image"
+            href="./public/images/avif/jazz-headliner.avif" />
+        <link rel="preload" as="image"
+            href="./public/images/avif/brown-wooden-floor-1920px.avif" />
+        <link rel="preload" as="image"
+            href="./public/images/svg/music-notes.svg" />
+        <link rel="preload" as="image"
+            href="./public/images/avif/record-player-arm.avif" />
+        <link rel="preload" as="image"
+            href="./public/images/avif/record-player-base.avif" />
+        <link rel="preload" as="image"
+            href="./public/images/avif/record.avif" />
+        <link rel="preload" as="font"
+            href="./public/fonts/Limelight-Regular.ttf"
+            crossorigin="anonymous" />
 
-    <title>Jazz Facts</title>
+        <title>Jazz Facts</title>
 
-    <script src="./web-components/hello-world.js" defer></script>
-    <script src="./web-components/nav-link.js" defer></script>
-</head>
+        <script src="./web-components/hello-world.js" defer></script>
+        <script src="./web-components/nav-link.js" defer></script>
+    </head>
 
-<body>
-    <!-- <div class="record-player-container">
+    <body>
+        <!-- <div class="record-player-container">
         <div class="record-player-base-container">
             <img class="record-player-base" src="./public/images/avif/record-player-base.avif" />
             <div class="record-container">
@@ -33,23 +40,28 @@
             </div>
         </div>
     </div> -->
-    <header>
-        <nav>
-            <ul class="nav-item-list">
-                <li><nav-link text="Overview" splotchcolor="#f54295"></nav-link></li>
-                <li><nav-link text="History" splotchcolor="#f55d42"></nav-link></li>
-                <li><nav-link text="Genres" splotchcolor="#f59b42"></nav-link></li>
-                <li><nav-link text="Playlist" splotchcolor="#f5d742"></nav-link></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="album-cover">
-        <img class="hero-image" src="./public/images/avif/jazz-headliner.avif" loading="eager" fetchpriority="high" />
-    </div>
-    <main>
-        <hello-world></hello-world>
-    </main>
-    <footer></footer>
-</body>
+        <header>
+            <nav>
+                <ul class="nav-item-list">
+                    <li><nav-link text="Overview"
+                            splotchcolor="#f54295"></nav-link></li>
+                    <li><nav-link text="History"
+                            splotchcolor="#f55d42"></nav-link></li>
+                    <li><nav-link text="Genres"
+                            splotchcolor="#f59b42"></nav-link></li>
+                    <li><nav-link text="Playlist"
+                            splotchcolor="#f5d742"></nav-link></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="album-cover">
+            <img class="hero-image"
+                src="./public/images/avif/jazz-headliner.avif" loading="eager"
+                fetchpriority="high" />
+        </div>
+        <main>
+        </main>
+        <footer></footer>
+    </body>
 
 </html>
