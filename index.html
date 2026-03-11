@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/index.css" />
-    <link rel="preload" as="image" href="/public/images/avif/jazz-headliner.avif" />
     <link rel="preload" as="image" href="/public/images/avif/brown-wooden-floor-1920px.avif" />
     <link rel="preload" as="image" href="/public/images/avif/record-player-arm.avif" />
     <link rel="preload" as="image" href="/public/images/avif/record-player-base.avif" />
@@ -16,6 +15,7 @@
     <title>Jazz Facts</title>
 
     <script type="module" src="/web-components/site-header.js"></script>
+    <script type="module" src="/web-components/record-album.js"></script>
 </head>
 
 <body>
@@ -31,16 +31,7 @@
         </div>
     </div> -->
     <site-header></site-header>
-    <a class="album-cover-link" href="/playlist/index.html">
-        <div class="album-cover">
-            <img class="hero-image" src="/public/images/avif/jazz-headliner.avif" loading="eager"
-                fetchpriority="high" />
-            <svg class="animated-record" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10" height="100%"
-                width="100%">
-                <circle cx="5" cy="5" r="5"></circle>
-            </svg>
-        </div>
-    </a>
+    <record-album></record-album>
     <main>
     </main>
     <footer></footer>
