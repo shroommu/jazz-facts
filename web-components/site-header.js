@@ -1,10 +1,10 @@
 import "./nav-link.js";
+import sheet from './site-header.css' with { type: 'css' };
 
 const musicNotesSpriteUrl = new URL(
   "../public/images/svg/music-notes.svg",
   import.meta.url,
 ).href;
-const siteHeaderCssUrl = new URL("./site-header.css", import.meta.url).href;
 const homePageUrl = new URL("../index.html", import.meta.url).href;
 const historyPageUrl = new URL("../history/index.html", import.meta.url).href;
 const genresPageUrl = new URL("../genres/index.html", import.meta.url).href;
@@ -13,11 +13,13 @@ const playlistPageUrl = new URL("../playlist/index.html", import.meta.url).href;
 class SiteHeader extends HTMLElement {
   constructor() {
     super();
+    this.shadow = this.attachShadow({ mode: "closed" })
+    this.shadow.adoptedStyleSheets = [sheet]
   }
 
   // connect component
   connectedCallback() {
-    this.innerHTML = `
+    this.shadow.innerHTML = `
         <link rel="preload" as="image"
         href="${musicNotesSpriteUrl}" />
         <header>
@@ -30,9 +32,6 @@ class SiteHeader extends HTMLElement {
                 </ul>
             </nav>
         </header>
-        <style>
-        @import "${siteHeaderCssUrl}";
-        </style>
     `;
   }
 }

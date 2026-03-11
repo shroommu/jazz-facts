@@ -1,9 +1,12 @@
+import sheet from './nav-link.css' with { type: 'css' };
+
 class NavLink extends HTMLElement {
   constructor() {
     super();
     this.text = "Nav Link";
     this.href = null;
-    this.shadow = this.attachShadow({ mode: "open" });
+    this.shadow = this.attachShadow({ mode: "closed" });
+    this.shadow.adoptedStyleSheets = [sheet]
   }
 
   // component attributes
@@ -23,7 +26,6 @@ class NavLink extends HTMLElement {
       "../public/images/svg/music-notes.svg",
       import.meta.url,
     ).href;
-    const navLinkCssUrl = new URL("./nav-link.css", import.meta.url).href;
 
     this.shadow.innerHTML = `
         <div class="nav-link-container">
@@ -34,9 +36,6 @@ class NavLink extends HTMLElement {
                 <use href="${musicNotesSpriteUrl}#double-eighth-note" class="note-3"/>
             </svg>
         </div>
-        <style>
-            @import "${navLinkCssUrl}";
-        </style>
     `;
   }
 }
