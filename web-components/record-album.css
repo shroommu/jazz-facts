@@ -3,6 +3,7 @@
     margin: 48px auto;
     height: 85%;
     aspect-ratio: 1/1;
+    text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -14,6 +15,10 @@
 .album-cover {
     position: relative;
     display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    padding: 24px;
+    align-items: center;
     width: 100%;
     height: 100%;
     background-color: rgb(247, 238, 123);
@@ -37,26 +42,29 @@
 }
 
 .hero-image {
-    display: block;
-    margin: auto;
+    margin: 0 auto;
     height: 75%;
     width: 75%;
-}
-
-@media (max-width: 800px) {
-    .hero-image {
-        width: 250px;
-        height: 250px;
-    }
 }
 
 .animated-record {
     position: absolute;
     z-index: -10;
+    top: 0;
     translate: 25% 0;
     transition: translate 0.5s ease;
 }
 
 .album-cover-link:hover .animated-record {
     translate: 50% 0;
+}
+
+.album-cover-title {
+    color: black;
+    font-size: xxx-large;
+}
+
+.album-cover-subtitle {
+    color: black;
+    font-size: x-large;
 }
