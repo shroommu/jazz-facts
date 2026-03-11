@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/index.css" />
-        <link rel="preload" as="image"
-            href="/public/images/avif/jazz-headliner.avif" />
-        <link rel="preload" as="image"
-            href="/public/images/avif/brown-wooden-floor-1920px.avif" />
-        <link rel="preload" as="image"
-            href="/public/images/avif/record-player-arm.avif" />
-        <link rel="preload" as="image"
-            href="/public/images/avif/record-player-base.avif" />
-        <link rel="preload" as="image"
-            href="/public/images/avif/record.avif" />
-        <link rel="preload" as="font"
-            href="/public/fonts/Limelight-Regular.ttf"
-            crossorigin="anonymous" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="preload" as="image" href="/public/images/avif/jazz-headliner.avif" />
+    <link rel="preload" as="image" href="/public/images/avif/brown-wooden-floor-1920px.avif" />
+    <link rel="preload" as="image" href="/public/images/avif/record-player-arm.avif" />
+    <link rel="preload" as="image" href="/public/images/avif/record-player-base.avif" />
+    <link rel="preload" as="image" href="/public/images/avif/record.avif" />
+    <link rel="preload" as="font" href="/public/fonts/Limelight-Regular.ttf" crossorigin="anonymous" />
 
-        <title>Jazz Facts</title>
+    <title>Jazz Facts</title>
 
-        <script type="module" src="/web-components/site-header.js"></script>
-    </head>
+    <script type="module" src="/web-components/site-header.js"></script>
+</head>
 
-    <body>
-        <!-- <div class="record-player-container">
+<body>
+    <!-- <div class="record-player-container">
         <div class="record-player-base-container">
             <img class="record-player-base" src="/public/images/avif/record-player-base.avif" />
             <div class="record-container">
@@ -37,15 +30,20 @@
             </div>
         </div>
     </div> -->
-        <site-header></site-header>
+    <site-header></site-header>
+    <a class="album-cover-link" href="/playlist/index.html">
         <div class="album-cover">
-            <img class="hero-image"
-                src="/public/images/avif/jazz-headliner.avif" loading="eager"
+            <img class="hero-image" src="/public/images/avif/jazz-headliner.avif" loading="eager"
                 fetchpriority="high" />
+            <svg class="animated-record" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 10 10" height="100%"
+                width="100%">
+                <circle cx="5" cy="5" r="5"></circle>
+            </svg>
         </div>
-        <main>
-        </main>
-        <footer></footer>
-    </body>
+    </a>
+    <main>
+    </main>
+    <footer></footer>
+</body>
 
 </html>
