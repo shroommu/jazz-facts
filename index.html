@@ -11,8 +11,6 @@
         <link rel="preload" as="image"
             href="./public/images/avif/brown-wooden-floor-1920px.avif" />
         <link rel="preload" as="image"
-            href="./public/images/svg/music-notes.svg" />
-        <link rel="preload" as="image"
             href="./public/images/avif/record-player-arm.avif" />
         <link rel="preload" as="image"
             href="./public/images/avif/record-player-base.avif" />
@@ -24,8 +22,7 @@
 
         <title>Jazz Facts</title>
 
-        <script src="./web-components/hello-world.js" defer></script>
-        <script src="./web-components/nav-link.js" defer></script>
+        <script type="module" src="./web-components/site-header.js"></script>
     </head>
 
     <body>
@@ -40,20 +37,7 @@
             </div>
         </div>
     </div> -->
-        <header>
-            <nav>
-                <ul class="nav-item-list">
-                    <li><nav-link text="Overview"
-                            splotchcolor="#f54295"></nav-link></li>
-                    <li><nav-link text="History"
-                            splotchcolor="#f55d42"></nav-link></li>
-                    <li><nav-link text="Genres"
-                            splotchcolor="#f59b42"></nav-link></li>
-                    <li><nav-link text="Playlist"
-                            splotchcolor="#f5d742"></nav-link></li>
-                </ul>
-            </nav>
-        </header>
+        <site-header></site-header>
         <div class="album-cover">
             <img class="hero-image"
                 src="./public/images/avif/jazz-headliner.avif" loading="eager"
