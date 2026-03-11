@@ -31,13 +31,9 @@ class NavLink extends HTMLElement {
             <style>
                 .nav-link-container {
                     position: relative;
-                    height: 100px;
                     display: flex;
                     justify-items: center;
                     align-items: center;
-                }
-                .nav-link-container:hover .paint-splotch-${this.text} {
-                    opacity: 1;
                 }
                 .nav-link-container:hover .music-notes {
                     opacity: 1;
@@ -50,26 +46,6 @@ class NavLink extends HTMLElement {
                 @media (max-width: 800px) {
                     .nav-link {
                         font-size: medium;
-                    }
-                }
-                .paint-splotch-${this.text} {
-                    opacity: 0;
-                    position: absolute;
-                    background-color: ${this.splotchcolor};
-                    height: 100px;
-                    width: 100px;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    z-index: 0;
-                    mask: url('./public/images/avif/paint-splotch-100px.avif'), radial-gradient(circle at center, transparent 0%, black 100%); 
-                    mask-size: contain;
-                    mask-composite: subtract;
-                }
-                @media (max-width: 800px) {
-                    .paint-splotch-${this.text} {
-                        height: 50px;
-                        width: 50px;
                     }
                 }
                 .music-notes {
@@ -99,6 +75,12 @@ class NavLink extends HTMLElement {
                     rotate: 30deg;
                     translate: 460px -190px;
                     transform-box: fill-box;
+                }
+                @media (max-width: 800px) {
+                    .music-notes {
+                        height: 75px;
+                        width: 112.5px;
+                    }
                 }
             </style>
         `;
