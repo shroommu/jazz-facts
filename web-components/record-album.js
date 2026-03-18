@@ -1,24 +1,21 @@
-import sheet from './record-album.css' with { type: 'css' };
+import styles from "./record-album.css?raw";
 
-const heroImageUrl = new URL(
-    "../public/images/avif/jazz-headliner.avif",
-    import.meta.url,
-).href;
+const heroImageUrl = "/images/avif/jazz-headliner.avif";
 
 class RecordAlbum extends HTMLElement {
     constructor() {
         super();
         this.shadow = this.attachShadow({ mode: "closed" })
-        this.shadow.adoptedStyleSheets = [sheet]
     }
 
     // connect component
     connectedCallback() {
         this.shadow.innerHTML = `
+        <style>${styles}</style>
         <link rel="preload" as="image" href="${heroImageUrl}" />
         <a class="album-cover-link" href="/playlist/index.html">
             <div class="album-cover">
-                <img class="hero-image" src="/public/images/avif/jazz-headliner.avif" loading="eager"
+                <img class="hero-image" src="${heroImageUrl}" loading="eager"
                     fetchpriority="high" />
                 <div class="album-cover-title">Top Hits</div>
                 <div class="album-cover-subtitle">From All The Greats</div>

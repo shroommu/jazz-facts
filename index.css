@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Over The Rainbow";
-  src: url(./public/fonts/OvertheRainbow-Regular.ttf), format("font/ttf");
+  src: url(/fonts/OvertheRainbow-Regular.ttf), format("font/ttf");
 }
 
 @font-face {
   font-family: "Notable";
-  src: url(./public/fonts/Notable-Regular.ttf), format("font/ttf");
+  src: url(/fonts/Notable-Regular.ttf), format("font/ttf");
 }
 
 @font-face {
   font-family: "Limelight";
-  src: url(./public/fonts/Limelight-Regular.ttf), format("font/ttf");
+  src: url(/fonts/Limelight-Regular.ttf), format("font/ttf");
 }
 
 body {
@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  /* background: url("./public/images/avif/brown-wooden-floor-1920px.avif") no-repeat;
+  /* background: url("/images/avif/brown-wooden-floor-1920px.avif") no-repeat;
   background-size: cover; */
   background-color: rgb(157, 211, 255)
 }
@@ -57,7 +57,7 @@ body record-album {
 }
 
 .record-player-base {
-  mask: url("./public/images/avif/record-player-base.avif");
+  mask: url("/images/avif/record-player-base.avif");
 }
 
 .tone-arm-container {
@@ -69,7 +69,7 @@ body record-album {
 }
 
 .tone-arm {
-  mask: url("./public/images/avif/record-player-arm.avif");
+  mask: url("/images/avif/record-player-arm.avif");
 }
 
 .record-container {
@@ -80,7 +80,7 @@ body record-album {
 }
 
 .record {
-  mask: url("./public/images/avif/record.avif");
+  mask: url("/images/avif/record.avif");
 }
 
 main {
@@ -98,6 +98,6 @@ main div {
   border-radius: 8px;
 }
 
-footer {
-  min-height: 128px;
+play-list {
+  width: 100%;
 }

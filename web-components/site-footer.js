@@ -1,14 +1,14 @@
-import sheet from './site-footer.css' with { type: 'css' };
+import styles from "./site-footer.css?raw";
 
 class SiteFooter extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "closed" })
-    this.shadow.adoptedStyleSheets = [sheet]
   }
 
   connectedCallback() {
     this.shadow.innerHTML = `
+        <style>${styles}</style>
         <footer>
         </footer>
     `;

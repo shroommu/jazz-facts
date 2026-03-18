@@ -1,25 +1,22 @@
 import "./nav-link.js";
-import sheet from './site-header.css' with { type: 'css' };
+import styles from "./site-header.css?raw";
 
-const musicNotesSpriteUrl = new URL(
-  "../public/images/svg/music-notes.svg",
-  import.meta.url,
-).href;
-const homePageUrl = new URL("../index.html", import.meta.url).href;
-const historyPageUrl = new URL("../history/index.html", import.meta.url).href;
-const genresPageUrl = new URL("../genres/index.html", import.meta.url).href;
-const playlistPageUrl = new URL("../playlist/index.html", import.meta.url).href;
+const musicNotesSpriteUrl = "/images/svg/music-notes.svg";
+const homePageUrl = "/";
+const historyPageUrl = "/history/";
+const genresPageUrl = "/genres/";
+const playlistPageUrl = "/playlist/";
 
 class SiteHeader extends HTMLElement {
   constructor() {
     super();
     this.shadow = this.attachShadow({ mode: "closed" })
-    this.shadow.adoptedStyleSheets = [sheet]
   }
 
   // connect component
   connectedCallback() {
     this.shadow.innerHTML = `
+        <style>${styles}</style>
         <link rel="preload" as="image"
         href="${musicNotesSpriteUrl}" />
         <header>
