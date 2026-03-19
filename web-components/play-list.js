@@ -24,16 +24,12 @@ class Playlist extends HTMLElement {
         this.fetchSpotifyData()
     }
 
-    async fetchData() {
+    async fetchSpotifyData() {
         try {
-            let token = await fetch();
-            let res = await fetch("https://api.spotify.com/v1/playlists/4Kl1pwvkkjoTt8WMmSyb7q", {
-                headers: {
-                    Authorization: 'Bearer ' + ''
-                }
-            })
+            console.log("trying");
+            let res = await fetch("/api/spotify/playlist")
             if (!res.ok) {
-                throw new Error(`API Error: ${response.status}`)
+                throw new Error(`API Error: ${res.status}`)
             }
             this.spotifyData = await res.json()
             console.log(this.spotifyData)
